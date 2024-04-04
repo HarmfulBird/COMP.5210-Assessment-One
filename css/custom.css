@@ -1,3 +1,4 @@
+/* Set Variables used elseware */
 :root {
     --ldarkbg: rgb(44, 44, 44);
     --darkbg: rgb(19, 19, 19);
@@ -9,6 +10,7 @@
     --color-5: rgb(255,109,0);
 }
 
+/* Base CSS for Body/Container and a tags*/
 body {
     margin: 0px;
     padding: 0px;
@@ -75,6 +77,8 @@ header h2 {
     font-size: 2.2vmin;
 }
 
+/*-------------------  Navigation  -------------------*/
+
 nav {
     margin-left: 7%;
     display: flex;
@@ -119,7 +123,7 @@ nav p .current {
     align-items: center;
 }
 
-/*-------------------  Home Page  -------------------*/
+/*-------------------  Home/Index Page  -------------------*/
 
 .content-main {
     background-color: var(--ldarkbg);
@@ -173,6 +177,7 @@ nav p .current {
     text-shadow: 0px 0px 20px black, 0px 0px 30px black;
 }
 
+/*-------------------  SCP Class Explinations  -------------------*/
 .explinations {
     box-sizing: border-box;
     margin: 50px auto 100px auto;
@@ -194,7 +199,7 @@ nav p .current {
     margin-bottom: 30px;
 }
 
-#explination {
+.explination {
     margin: 20px auto 40px auto;
     padding-left: 30px;
     font-size: 2vmin;
@@ -262,7 +267,7 @@ hr {
 }
 
 
-/*-------------------  SCP CLASSES  -------------------*/
+/*-------------------  SCP CLASSIFICATTION  -------------------*/
 
 .classification {
     box-sizing: border-box;
@@ -289,7 +294,7 @@ hr {
     font-size: 150%;
 }
 
-.containmentclass p #SCPclass {
+.containmentclass p .SCPclass {
     display: block;
     font-size: 160%;
     margin-top: 0;
@@ -333,7 +338,7 @@ hr {
 }
 .safe .icon-image { background-color: var(--color-1); }
 
-/*-------------------  SCP Disruption / Risk Class  -------------------*/
+/*-------------------  Other Classes Box  -------------------*/
 
 .otherclass {
     box-sizing: border-box;
@@ -349,7 +354,7 @@ hr {
     text-transform: capitalize;
 }
 
-.otherclass p #SCPclass {
+.otherclass p .SCPclass {
     display: block;
     font-size: 160%;
     margin-top: 0;
@@ -370,6 +375,7 @@ hr {
     background: rgb(0,0,0);
 }
 
+/*-------------------  Disruption / Risk Class  -------------------*/
 .disruptionclass, .riskclass {
     box-sizing: border-box;
     width: 50%;
@@ -388,7 +394,7 @@ hr {
     margin-left: 5px;
 }
 
-/*---- DARK / NOTICE ----*/
+/*------------------- DARK / NOTICE -------------------*/
 .dark, .notice {
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-1) 100%);
@@ -396,7 +402,7 @@ hr {
 }
 .dark .icon-image, .notice .icon-image{ background-color: var(--color-1); }
 
-/*---- VLAM / CAUTION ----*/
+/*------------------- VLAM / CAUTION -------------------*/
 .vlam, .caution {
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-4) 100%);
@@ -404,7 +410,7 @@ hr {
 }
 .vlam .icon-image, .caution .icon-image{ background-color: var(--color-4); }
 
-/*---- KENEQ / WARNING ----*/
+/*------------------- KENEQ / WARNING -------------------*/
 .keneq, .warning {
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-2) 100%);
@@ -412,7 +418,7 @@ hr {
 }
 .keneq .icon-image, .warning .icon-image{ background-color: var(--color-2); }
 
-/*---- EKHI / DANGER ----*/
+/*------------------- EKHI / DANGER -------------------*/
 .ekhi, .danger {
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-5) 100%);
@@ -420,7 +426,7 @@ hr {
 }
 .ekhi .icon-image, .danger .icon-image{ background-color: var(--color-5); }
 
-/*---- AMIDA / CRITICAL ----*/
+/*------------------- AMIDA / CRITICAL -------------------*/
 .amida, .critical {
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-3) 100%);
@@ -487,6 +493,7 @@ hr {
 }
 
 
+/*-------------------  Media Queries For Mobile / Smaller Screen Responsiveness  -------------------*/
 @media (max-width: 1360px) {
     .classification {
         display: block;
@@ -542,8 +549,6 @@ hr {
 }
 
 @media (max-width: 767px) {
-    
-
     .mobile-nav {
         font-size: 100%;
     }
@@ -553,7 +558,7 @@ hr {
     
     .explinations p { font-size: 3.5vmin; }
 
-    #explination {
+    .explination {
         padding-left: 20px;
         font-size: 3.5vmin;
         line-height: 4vmin;
@@ -567,10 +572,10 @@ hr {
     .image h1 { font-size: 5vmin; }
 
     .containmentclass p { font-size: 100%; }
-    .containmentclass p #SCPclass { font-size: 120%; }
+    .containmentclass p .SCPclass { font-size: 120%; }
 
     .otherclass p { font-size: 100%; } 
-    .otherclass p #SCPclass { font-size: 120%; }
+    .otherclass p .SCPclass { font-size: 120%; }
 
     .scp-info hr { height: 1px; }
     

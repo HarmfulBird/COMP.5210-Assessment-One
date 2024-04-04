@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>SCP Fountdation</title>
 
-    <link href="css/custom.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link href="css/custom.css" rel="stylesheet" type="text/css">
 </head>
 <body>
     <div class="container">
+
+        <!-- Header -->
         <header class="header">
+            <!-- LOGO / Name -->
             <div class="Logo">
-                <img src="https://scpwiki.github.io/sigma/images/header-logo.svg">
+                <img src="https://scpwiki.github.io/sigma/images/header-logo.svg" alt="Logo" aria-label="Website Logo">
                 <h1>
                     <a href="index.html">
                         SCP Foundation
@@ -24,8 +26,9 @@
                     </a>
                 </h2>
             </div>
-          
-            <nav class="nav">
+
+            <!-- Navigation Non-Mobile/widescreen -->
+            <nav class="nav" aria-label="Navtigation">
                 <p><a class="current" href="index.html">HOME</a></p> 
                 <p><a href="scp-002.html">SCP-002</a></p> 
                 <p><a href="scp-003.html">SCP-003</a></p> 
@@ -35,7 +38,8 @@
             </nav>
         </header>  
 
-        <nav class="mobile-nav">
+        <!-- Navigation Mobile -->
+        <nav class="mobile-nav" aria-label="Navtigation">
             <p><a class="current" href="index.html">HOME</a></p> 
             <p><a href="scp-002.html">SCP-002</a></p> 
             <p><a href="scp-003.html">SCP-003</a></p> 
@@ -44,6 +48,7 @@
             <p><a href="scp-006.html">SCP-006</a></p> 
         </nav>
 
+        <!-- Warning Label for Main Page -->
         <div class="content-main">
             <div class="warning-home">
                 <h1><span id="warn">WARNING:</span> THE FOUNDATION DATABASE IS</h1>
@@ -57,9 +62,11 @@
 
         <hr style="margin-top: 190px; margin-bottom: 70px;">
 
+        <!-- Explinations of the different Classes -->
         <div class="explinations">
             <h1>SCP Classes Explained</h1>
 
+            <!-- Containment Classes -->
             <div class="containmentclasses">
                 <h2>
                     Containment Classes:
@@ -73,9 +80,9 @@
                         Containment Class:
                         <br> <span id="SCPclass">SAFE</span>
                     </P>
-                    <div class="icon-image"><img src="images/ContainmentClass/safe-icon.svg"></div>
+                    <div class="icon-image"><img src="images/ContainmentClass/safe-icon.svg"  alt="safe Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     The name of Safe was chosen as an easily understood term. 
                     <br>Anomalies classified as Safe are those deemed as being easy to contain and generally safe to handle. 
                     <br>While this does not mean Safe SCPs are not dangerous in some capacity, they pose no active threat to humanity or normalcy.
@@ -87,9 +94,9 @@
                         Containment Class:
                         <br> <span id="SCPclass">EUCLID</span>
                     </P>
-                    <div class="icon-image"><img src="images/ContainmentClass/euclid-icon.svg"></div>
+                    <div class="icon-image"><img src="images/ContainmentClass/euclid-icon.svg" alt="Euclid Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     The name of Euclid comes from the Greek mathematician Euclid. 
                     <br>Anomalies classified as Euclid typically need more resources to keep fully contained, though this is mainly to a lack of full understanding of the anomaly. 
                     <br>Most Euclid SCPs can move on their own, either possessing sapient or sentient capacities or simply being autonomous. Euclids can be dangerous, though not always.
@@ -101,9 +108,9 @@
                         Containment Class:
                         <br> <span id="SCPclass">KETER</span>
                     </P>
-                    <div class="icon-image"><img src="images/ContainmentClass/keter-icon.svg"></div>
+                    <div class="icon-image"><img src="images/ContainmentClass/keter-icon.svg" alt="keter Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     The name of Keter is derived from the topmost part of the Tree of Life in the Jewish Kabbalah. 
                     <br>Depending on headcanon, it could also be derived from Dr. Hermann Keter's name.
                     <br>Anomalies classified as Keter require vast amounts of resources to contain or have common containment breaches; 
@@ -112,6 +119,7 @@
                 </p>
             </div>
             <hr>
+            <!-- Disruption Classes -->
             <div class="disruptionclasses" style="margin-top: 40px;">
                 <h2>
                     Disruption Classes:
@@ -131,9 +139,9 @@
                         Disruption Class:
                         <br> <span id="SCPclass">DARK</span>
                     </P>
-                    <div class="icon-image"><img src="images/DisruptionClass/dark-icon.svg"></div>
+                    <div class="icon-image"><img src="images/DisruptionClass/dark-icon.svg"  alt="dark Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     The name of Dark was chosen as an easily understood term, similar to Safe for Containment Classes.
                     <br>Anomalies classified as Dark have little to no potential to disrupt the general population. 
                     <br>Any influence by a Dark SCP is too slow to be of any concern to the SCP Foundation, with it either being inert or only affecting one individual. 
@@ -145,9 +153,9 @@
                         Disruption Class:
                         <br> <span id="SCPclass">VLAM</span>
                     </P>
-                    <div class="icon-image"><img src="images/DisruptionClass/vlam-icon.svg"></div>
+                    <div class="icon-image"><img src="images/DisruptionClass/vlam-icon.svg"  alt="vlam Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     The name of Vlam is derived from the Dutch word for "flame," also indicated by its icon.
                     <br>Anomalies classified as Vlam have some potential for disruption, though it only affects small groups of people. 
                     <br>Influence from a Vlam SCP can affect multiple people, though this won't spread very far. 
@@ -159,9 +167,9 @@
                         Disruption Class:
                         <br> <span id="SCPclass">KENEQ</span>
                     </P>
-                    <div class="icon-image"><img src="images/DisruptionClass/keneq-icon.svg"></div>
+                    <div class="icon-image"><img src="images/DisruptionClass/keneq-icon.svg"  alt="keneq Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     The name of Keneq derives from the Alutiiq word for "camp fire", though this can extend to any form of fire.
                     <br>Anomalies classified as Keneq have enough potential to disrupt a city or enough people to populate a city. 
                     <br>Keneq SCP influence can spread at a fast speed, making it enough to cause concern for the Foundation. 
@@ -173,9 +181,9 @@
                         Disruption Class:
                         <br> <span id="SCPclass">EKHI</span>
                     </P>
-                    <div class="icon-image"><img src="images/DisruptionClass/ekhi-icon.svg"></div>
+                    <div class="icon-image"><img src="images/DisruptionClass/ekhi-icon.svg" alt="ekhi Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     The name of Ekhi is from the Basque word for "Sun".
                     <br>Anomalies classified as Ekhi are very dangerous, with influence spanning countries or large cities, or even the entire world. 
                     <br>Any spread from an Ekhi SCP would be very difficult to manage due to its size or power, as well as being hard to neutralize any effects from such an anomaly.
@@ -186,9 +194,9 @@
                         Disruption Class:
                         <br> <span id="SCPclass">AMIDA</span>
                     </P>
-                    <div class="icon-image"><img src="images/DisruptionClass/amida-icon.svg"></div>
+                    <div class="icon-image"><img src="images/DisruptionClass/amida-icon.svg" alt="amida Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     The name of Amida has many meanings, but it is a direct reference to the Buddha of Eternal Light.
                     <br>Anomalies classified as Amida have such a large influence that they threaten to break or have already broken the Veil, n
                     <br>ecessitating the SCP Foundation to "declare war" on them. 
@@ -197,9 +205,10 @@
                 </p>
             </div>
             <hr>
-            <div class="disruptionclasses" style="margin-top: 40px;">
+            <!-- Risk Classes -->
+            <div class="riskclasses" style="margin-top: 40px;">
                 <h2>
-                    Disruption Classes:
+                    Risk Classes:
                 </h2>
                 <p class="explination" style="margin-bottom: 50px;">
                     Risk Classes are categories of anomalous entities ranked by their severity of an anomaly's effects on one individual person and the difficulty it is to recover from such effects.
@@ -214,9 +223,9 @@
                         Risk Class:
                         <br> <span id="SCPclass">NOTICE</span>
                     </P>
-                    <div class="icon-image"><img src="images/RiskClass/notice-icon.svg"></div>
+                    <div class="icon-image"><img src="images/RiskClass/notice-icon.svg" alt="notice Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     Anomalies classified as Notice have low risk potential. 
                     <br>Notice SCPs rarely have any effects on humans, with any being mild at its maximum. 
                     <br>When in proximity of a Notice SCP, one wouldn't feel any effects, due to their non-existence or how mild they truly are.
@@ -227,9 +236,9 @@
                         Risk Class:
                         <br> <span id="SCPclass">CAUTION</span>
                     </P>
-                    <div class="icon-image"><img src="images/RiskClass/caution-icon.svg"></div>
+                    <div class="icon-image"><img src="images/RiskClass/caution-icon.svg" alt="caution Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     Anomalies classified as Caution have moderate risk potential. 
                     <br>Some effects on humans are present, though these are typically mild to moderate, possibly being mildly dangerous. 
                     <br>Anyone being affected by a Caution SCP may feel some of the effects from it.
@@ -240,9 +249,9 @@
                         Risk Class:
                         <br> <span id="SCPclass">WARNING</span>
                     </P>
-                    <div class="icon-image"><img src="images/RiskClass/warning-icon.svg"></div>
+                    <div class="icon-image"><img src="images/RiskClass/warning-icon.svg"  alt="warning Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     Anomalies classified as Warning have high risk potential. 
                     <br>These typically possess mild to severe effects on humans, posing moderate danger to those nearby a Warning SCP.
                 </p>
@@ -252,9 +261,9 @@
                         Risk Class:
                         <br> <span id="SCPclass">DANGER</span>
                     </P>
-                    <div class="icon-image"><img src="images/RiskClass/danger-icon.svg"></div>
+                    <div class="icon-image"><img src="images/RiskClass/danger-icon.svg"  alt="danger Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     Anomalies classified as Danger have very high risk potential, with a high possibility of being affected by a Danger SCP. 
                     <br>These effects are also typically deadly, ranging from major to extreme. 
                     brAnybody in the presence of a Danger SCP is at a high risk.
@@ -265,9 +274,9 @@
                         Risk Class:
                         <br> <span id="SCPclass">CRITICAL</span>
                     </P>
-                    <div class="icon-image"><img src="images/RiskClass/critical-icon.svg"></div>
+                    <div class="icon-image"><img src="images/RiskClass/critical-icon.svg"  alt="critical Icon"></div>
                 </div>
-                <p id="explination">
+                <p class="explination">
                     Anomalies classified as Critical have incalculable risk potential, as the effects of a Critical SCP will be instant and/or severe. 
                     <br>Death is highly likely and expected from Critical SCPs, though it is not guaranteed if caught in the presence of one. 
                     <br>The possibility of recovery from the effects of a Critical SCP is deemed impossible.
@@ -277,6 +286,7 @@
 
     </div>
 
+    <!-- Script -->
     <script src="script/script.js"></script>
 </body>
 </html>

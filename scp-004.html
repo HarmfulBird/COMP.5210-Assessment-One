@@ -9,9 +9,11 @@
 </head>
 <body>
     <div class="container">
+        <!--Header-->
         <header class="header">
+            <!--Logo / Name-->
             <div class="Logo">
-                <img src="https://scpwiki.github.io/sigma/images/header-logo.svg">
+                <img src="https://scpwiki.github.io/sigma/images/header-logo.svg" alt="Logo">
                 <h1>
                     <a href="index.html">
                         SCP Foundation
@@ -24,6 +26,7 @@
                 </h2>
             </div>
           
+            <!--Non-Mobile Navigation-->
             <nav class="nav">
                 <p><a href="index.html">HOME</a></p> 
                 <p><a href="scp-002.html">SCP-002</a></p> 
@@ -34,6 +37,7 @@
             </nav>
         </header>
 
+        <!--Mobile Navigation-->
         <nav class="mobile-nav">
             <p><a href="index.html">HOME</a></p> 
             <p><a href="scp-002.html">SCP-002</a></p> 
@@ -43,40 +47,47 @@
             <p><a href="scp-006.html">SCP-006</a></p> 
         </nav>
 
+        <!--Content-->
         <div class="content">
+            <!--SCP Image / Number / Class-->
             <div class="image">
-                <img src="images/SCP-004.jpg">
+                <img src="images/SCP-004.jpg" alt="SCP-004">
                 <h1>Item #: SCP-004</h1>
                 <h1>Object Class: Euclid</h1>
             </div>
+            <!--Classification Labels-->
             <div class="classification">
+                <!--Containment Class-->
                 <div class="containmentclass euclid">
                     <P>
                         Containment Class:
-                        <br> <span id="SCPclass">EUCLID</span>
+                        <br> <span class="SCPclass">EUCLID</span>
                     </P>
-                    <div class="icon-image"><img src="images/ContainmentClass/euclid-icon.svg"></div>
+                    <div class="icon-image"><img src="images/ContainmentClass/euclid-icon.svg" alt="euclid icon"></div>
                 </div>
                 <div class="otherclass">
+                    <!--Disruption Class-->
                     <div class="disruptionclass vlam">
                         <P>
                             Disruption Class:
-                            <br> <span id="SCPclass">VLAM</span>
+                            <br> <span class="SCPclass">VLAM</span>
                         </P>
-                        <div class="icon-image"><img src="images/DisruptionClass/vlam-icon.svg"></div>
+                        <div class="icon-image"><img src="images/DisruptionClass/vlam-icon.svg" alt="vlam icon"></div>
                     </div>
-                    
+                    <!--Risk Class-->
                     <div class="riskclass danger">
                         <P>
                             Risk Class:
-                            <br> <span id="SCPclass">DANGER</span>
+                            <br> <span class="SCPclass">DANGER</span>
                         </P>
-                        <div class="icon-image"><img src="images/RiskClass/danger-icon.svg"></div>
+                        <div class="icon-image"><img src="images/RiskClass/danger-icon.svg" alt="danger icon"></div>
                     </div>
                 </div>
             </div>
             
+            <!--SCP Info-->
             <div class="scp-info">
+                <!--SCP Containment Info-->
                 <div class="scp-containment-info">
                     <h3>Special Containment Procedures:</h3>
                     
@@ -91,6 +102,7 @@
                     
                 </div>
                 <hr>
+                <!--SCP Description-->
                 <div class="scp-description">
                     <h3>Description:</h3>
 
@@ -100,6 +112,7 @@
                     </p>
                 </div>
                 <hr>
+                <!--SCP Chronological History-->
                 <div class="scp-reference">
                     <h4>Chronological History:</h4>
 
@@ -160,6 +173,7 @@
                     </p>
                 </div>
                 <hr>
+                <!--SCP Space Time Anomalies-->
                 <div class="scp-reference">
                     <h4>Space-Time Anomalies</h4>
 
@@ -172,6 +186,7 @@
                     </p>
                 </div>
                 <hr>
+                <!--SCP Additional Notes-->
                 <div class="scp-reference">
                     <h4>Additional Notes</h4>
 
@@ -183,6 +198,7 @@
                     </p>
                 </div>
                 <hr>
+                <!--SCP Appendix's-->
                 <div class="scp-reference">
                     <h4>Appendix A: Mental Health Effects of SCP-004-12</h4>
 
@@ -214,6 +230,7 @@
             </div>
         </div>
     </div>
+    <!--Script-->
     <script src="script/script.js"></script>
 </body>
 </html>
