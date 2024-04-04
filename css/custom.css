@@ -1,0 +1,619 @@
+:root {
+    --ldarkbg: rgb(44, 44, 44);
+    --darkbg: rgb(19, 19, 19);
+
+    --color-1: rgb(0,159,107);
+    --color-2: rgb(255,211,0);
+    --color-3: rgb(196,2,51);
+    --color-4: rgb(0,135,189);
+    --color-5: rgb(255,109,0);
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Sans Normalcy','Nanum Gothic',Arial,sans-serif;
+    background-color: var(--ldarkbg);
+}
+
+.container {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+a {
+    text-decoration: none;
+    background: 0 0;
+    color: inherit;
+}
+a:visited{
+    text-decoration: none;
+}
+
+/*-------------------  Header/Nav  -------------------*/  /**/
+
+header {
+    display: flex;
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 16vmin; 
+    padding: 0px 0px 0px 0px;
+
+    background-color: var(--darkbg);
+
+    color: white;
+    border-bottom: 8px solid black;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header img {
+    float: left;
+    width: 13vmin;
+    margin: 0px;
+    padding-left: 2.5vmin;
+    padding-top: 1.5vmin;
+    left: 0px;
+}
+
+header h1 { 
+    padding: 4vmin 0vmin 0vmin 17.5vmin;
+    margin: 0px;
+    font-weight: 700;
+    font-size: 4vmin;
+    text-wrap: nowrap;
+}
+
+header h2 {
+    padding: 0vmin 0vmin 0vmin 17.8vmin;
+    margin-top: 0px;
+    font-size: 2.2vmin;
+}
+
+nav {
+    margin-left: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    font-size: 2vmin;
+    text-wrap: nowrap;
+    letter-spacing: 1px;
+}
+
+nav p {
+    display: inline;
+    margin: 0 20px 0 10px;
+    padding: 0px;
+    letter-spacing: 1px;
+}
+
+nav p:first-child {
+    margin-right: 20px;
+    padding-right: 30px;
+    border-right: 2px solid white;
+}
+
+nav p .current {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    font-weight: bold;
+}
+
+/*------------------- Mobile Navigation -------------------*/
+  
+.mobile-nav {
+    box-sizing: border-box;
+    padding: 10px 0px 10px 0px;
+    background-color: var(--darkbg);
+    color: white;
+    border-bottom: 8px solid black;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/*-------------------  Home Page  -------------------*/
+
+.content-main {
+    background-color: var(--ldarkbg);
+
+    padding: 2vmin 0vmin 0vmin 0vmin;
+    display: flex;
+    justify-content: center;
+
+    font-family: Inter,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+    font-feature-settings: 'case','ss01','ss04';
+}
+
+.warning-home {
+    text-align: center;
+    margin-top: 15vmin;
+
+    color: white;
+    position: relative;
+    
+}
+
+.warning-home h1 {
+    margin: 10px 0px 10px 0px;
+}
+
+.warning-home h1 #warn {
+    color: var(--color-3); 
+    letter-spacing: 3px;
+}
+
+.warning-home #classified {
+    letter-spacing: 3.5px;
+    font-size: 13vmin;
+    font-weight: bold;
+
+    color: var(--color-3); 
+    text-shadow: 0px 0px 20px black, 0px 0px 30px black;
+}
+
+.warning-home h2 {
+    padding: 0px;
+    margin: 0px;
+}
+
+.warning-home #scp {
+    margin-top: 10vmin;
+
+    font-size: 4vmin;
+    letter-spacing: 1.5px;
+    word-spacing: 25px;
+    text-shadow: 0px 0px 20px black, 0px 0px 30px black;
+}
+
+.explinations {
+    box-sizing: border-box;
+    margin: 50px auto 100px auto;
+    width: 90%;
+    color: white;
+}
+
+.explinations h1 {
+    text-align: center;
+    color: white;
+    font-size: 5vmin;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.explinations h2 {
+    color: white;
+    font-size: 4vmin;
+    margin-bottom: 30px;
+}
+
+#explination {
+    margin: 20px auto 40px auto;
+    padding-left: 30px;
+    font-size: 2vmin;
+    line-height: 2.5vmin;
+}
+
+hr {
+    width: 92%;
+    height: 3px;
+    background-color: white;
+    margin: auto;
+    margin: 50px auto 50px auto;
+    padding: 0px;
+}
+
+.containmentclasses, .disruptionclasses, .riskclasses {
+    border-radius: 20px;
+    border: 4px solid white;
+    background-color: var(--darkbg);
+    padding: 20px;
+}
+
+
+/*-------------------  SCP Pages  -------------------*/
+
+.content {
+    background-color: var(--darkbg);
+    color: white;
+    font-family: Inter,BlinkMacSystemFont,'Segoe UI',Roboto,Oxygen,Ubuntu,Cantarell,'Fira Sans','Droid Sans','Helvetica Neue',sans-serif;
+    font-feature-settings: 'case','ss01','ss04';
+    padding-bottom: 100px;
+}
+
+.content h1, h2, p{
+    margin: 0px;
+    padding: 0px;
+}
+
+.image {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    height: 50vmin;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.image h1 {
+    font-size: 4.5vmin;
+}
+
+.image h1:first-of-type {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+}
+.image h1:last-of-type {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+}
+
+
+/*-------------------  SCP CLASSES  -------------------*/
+
+.classification {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+}
+
+/*-------------------  SCP CONTAINMENT CLASSES  -------------------*/
+.containmentclass {
+    box-sizing: border-box;
+    align-items: center;
+    display: inline-flex;
+    width: 50%;
+    padding: 0px 20px 0px 25px;
+
+    background: rgb(0,0,0);
+
+    border-left: 10px solid black;
+    margin-right: 5px;
+    
+}
+
+.containmentclass p {
+    font-size: 150%;
+}
+
+.containmentclass p #SCPclass {
+    display: block;
+    font-size: 160%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.containmentclass .icon-image {
+    width: 9vmin;
+    height: 9vmin;
+    margin: 10px 0px 10px 0px;
+    border-radius: 50%;
+    border: 0.25rem solid rgb(12 12 12);
+    margin-left: auto;
+    overflow: hidden;
+    background: rgb(0,0,0);
+}
+
+/*-------------------  SCP Containment Class Colors  -------------------*/
+
+.keter {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-3) 100%);
+    border-left: 15px solid var(--color-3);
+}
+.keter .icon-image { background-color: var(--color-3); }
+
+.euclid {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-2) 100%);
+    border-left: 15px solid var(--color-2);
+}
+.euclid .icon-image { background-color: var(--color-2); }
+
+.safe {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-1) 100%);
+    border-left: 15px solid var(--color-1);
+}
+.safe .icon-image { background-color: var(--color-1); }
+
+/*-------------------  SCP Disruption / Risk Class  -------------------*/
+
+.otherclass {
+    box-sizing: border-box;
+    display: flex;
+    width: 55%;
+    margin-left: 10px;
+
+    justify-content: center;
+}
+
+.otherclass p {
+    font-size: 140%;
+    text-transform: capitalize;
+}
+
+.otherclass p #SCPclass {
+    display: block;
+    font-size: 160%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.otherclass .icon-image {
+    width: 9vmin;
+    height: 9vmin;
+    margin: 10px 0px 10px 0px;
+    border-radius: 50%;
+    border: 0.25rem solid rgb(12 12 12);
+    margin-left: auto;
+    overflow: hidden;
+    background: rgb(0,0,0);
+}
+
+.disruptionclass, .riskclass {
+    box-sizing: border-box;
+    width: 50%;
+    border-left: 10px solid rgb(0,0,0);
+    padding: 0px 20px 0px 25px;
+    align-items: center;
+    display: inline-flex;
+    background: var(--ldarkbg);
+}
+
+.disruptionclass {
+    margin-right: 5px;
+}
+
+.riskclass {
+    margin-left: 5px;
+}
+
+/*---- DARK / NOTICE ----*/
+.dark, .notice {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-1) 100%);
+    border-left: 15px solid var(--color-1);
+}
+.dark .icon-image, .notice .icon-image{ background-color: var(--color-1); }
+
+/*---- VLAM / CAUTION ----*/
+.vlam, .caution {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-4) 100%);
+    border-left: 15px solid var(--color-4);
+}
+.vlam .icon-image, .caution .icon-image{ background-color: var(--color-4); }
+
+/*---- KENEQ / WARNING ----*/
+.keneq, .warning {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-2) 100%);
+    border-left: 15px solid var(--color-2);
+}
+.keneq .icon-image, .warning .icon-image{ background-color: var(--color-2); }
+
+/*---- EKHI / DANGER ----*/
+.ekhi, .danger {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-5) 100%);
+    border-left: 15px solid var(--color-5);
+}
+.ekhi .icon-image, .danger .icon-image{ background-color: var(--color-5); }
+
+/*---- AMIDA / CRITICAL ----*/
+.amida, .critical {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, var(--color-3) 100%);
+    border-left: 15px solid var(--color-3);
+}
+.amida .icon-image, .critical .icon-image{ background-color: var(--color-3); }
+
+
+/*--------------------------------  SCP Info  --------------------------------*/
+
+.scp-info {
+    box-sizing: border-box;
+    margin-top: 20px;
+
+}
+
+.scp-info hr {
+    width: 92%;
+    height: 3px;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.scp-info h3, .scp-info h4, .scp-info p {
+    margin: 0px;
+    padding: 0px;
+}
+
+.scp-info h3 {
+    font-size: 4vmin;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.scp-info h4 {
+    font-size: 3vmin;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.scp-info p {
+    font-size: 2vmin;
+}
+
+/*-------------------  SCP Special Containment Procedures  -------------------*/
+
+.scp-containment-info {
+    box-sizing: border-box;
+    padding: 10px 100px 20px 100px;
+    margin-top: 30px;
+}
+
+.scp-description {
+    box-sizing: border-box;
+    padding: 10px 100px 20px 100px;
+}
+
+.scp-reference {
+    box-sizing: border-box;
+    padding: 10px 100px 20px 100px;
+}
+
+
+@media (max-width: 1360px) {
+    .classification {
+        display: block;
+    }
+    .containmentclass {
+        width: 60%;
+    }
+    .otherclass {
+        width: 60%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1190px) {
+    .mobile-nav { 
+        display: flex; 
+        margin-left: 0px;
+    }
+    .header { border: none; }
+    .nav {  display: none;  }
+
+    header h1 { 
+        font-size: 5.2vmin;
+        padding-top: 3vmin;
+    }
+    
+    header h2 { 
+        font-size: 3.2vmin; 
+    }
+    
+}
+
+@media (max-width: 1120px) {
+    .otherclass {
+        display: block;
+        width: 60%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .disruptionclass { width: 100%; }
+
+    .riskclass {
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .containmentclass, .otherclass { width: 100%; }
+}
+
+@media (max-width: 767px) {
+    
+
+    .mobile-nav {
+        font-size: 100%;
+    }
+
+    .explinations h1 { font-size: 7vmin; }
+    .explinations h2 { font-size: 5vmin; }
+    
+    .explinations p { font-size: 3.5vmin; }
+
+    #explination {
+        padding-left: 20px;
+        font-size: 3.5vmin;
+        line-height: 4vmin;
+    }
+
+    .scp-containment-info, .scp-description, .scp-reference {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .image h1 { font-size: 5vmin; }
+
+    .containmentclass p { font-size: 100%; }
+    .containmentclass p #SCPclass { font-size: 120%; }
+
+    .otherclass p { font-size: 100%; } 
+    .otherclass p #SCPclass { font-size: 120%; }
+
+    .scp-info hr { height: 1px; }
+    
+
+    .scp-info h3 { font-size: 7vmin; }
+    .scp-info h4 { font-size: 6vmin; }
+    .scp-info p { font-size: 3.5vmin; }
+}
+
+@media (max-width: 670px) {
+    .mobile-nav {
+        line-height: 200%;
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: fit-content;
+        display: flex;
+    }
+
+    header .logo {
+        width: fit-content;
+        height: fit-content;
+    }
+
+    header img {
+        width: 20vmin;
+        padding-left: 3vmin;
+        padding-top: 2vmin;
+    }
+
+    header h1 { 
+        padding-left: 24.5vmin;
+        font-size: 5.6vmin;
+        padding-top: 6.4vmin;
+        text-wrap: nowrap;
+    }
+    
+    header h2 { 
+        padding-left: 24.7vmin;
+        font-size: 3.4vmin; 
+        text-wrap: nowrap;
+    }
+}
